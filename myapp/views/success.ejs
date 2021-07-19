@@ -1,0 +1,45 @@
+<%- include('dashboardheader') %>
+
+<div class="item item3 main cart">
+    <div class="container dashboardcart" >
+        <br/><br/>
+        <h1>Payment Status</h1>       
+        
+                
+  <section>    
+    <strong>Payment Successful</strong>
+    <br/>
+    <strong>Download Your Receipt</strong>
+    <br/>
+    <strong>Email Your Receipt</strong>
+    
+    <pre class="json" id="session-data" style="background-color: transparent; color: black;">
+      <%= Session %> 
+    </pre>
+    <p>Invoice has been sent to your email id or you can download it from your dashboard</p>
+    <div>
+      Thanks For purchasing our Services! :)
+    </div>
+  </section>
+</div>
+</div>
+<script charset="utf-8">
+  var sessionData = document.getElementById('session-data');
+  var params = new URLSearchParams(window.location.search);
+  var id = params.get('id');
+
+  fetch('/success?id=' + id/*'/success?id=' + id*/)
+  .then((response) => res.json())
+  /*.then((data) => {
+    console.log('Success:', data)
+  })*/
+  .then((session) => {
+    sessionData.innerText = JSON.stringify(session, null, 2)
+  })
+  .catch((error) => {
+    console.error('Error:', error);
+  });
+</script>
+<%- include('modal') %>
+
+<%- include('dashboardfooter') %>
