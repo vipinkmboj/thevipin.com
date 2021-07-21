@@ -416,7 +416,7 @@
     width: 100%;
     height: auto;
     */
-    background-color: rgba(238, 135, 97, .6);  
+    background-color: transparent;  
     /*margin-top: 3.8em;*/
     margin-bottom: 0;  
     padding: 1.9em;  
@@ -483,19 +483,23 @@
     background-color: transparent;
     max-width: 100%;
     height: auto;
-    padding-top: 3.2em;
+    padding-top: 1em;
     margin-top: 0;
     border-bottom: 1px solid whitesmoke;
     
   }
   
   .main .welcome h1 {
-    text-align: left;
+    text-align: center;
     padding-bottom: 1.6em;  
     color: whitesmoke;
     
     /*margin: 2.5em auto auto auto;*/
     margin: auto auto auto auto;
+  }
+  .main .welcome h1 a {
+    text-decoration: none;
+    color: whitesmoke;
   }
   .main .welcome h2 {
     margin: auto;
@@ -522,14 +526,19 @@
     margin: auto;
     padding: 1em;
   }
+  
   #hello {
-    padding-top: 2em;
+    padding-top: 1em;
+  }
+  .main .welcome .row .column-left a {
+    text-decoration: none;
+    color: whitesmoke;
   }
   .main .welcome .row .column-left .anchor-block {
     display: flex;
     justify-content: space-around;
   }
-  .main .welcome .row .column-left a{
+  .main .welcome .row .column-left .anchor-block a{
     text-decoration: none;
     color: white;
     border: 2px solid whitesmoke;
