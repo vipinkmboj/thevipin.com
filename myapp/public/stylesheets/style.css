@@ -525,6 +525,18 @@
   #hello {
     padding-top: 2em;
   }
+  .main .welcome .row .column-left .anchor-block {
+    display: flex;
+    justify-content: space-around;
+  }
+  .main .welcome .row .column-left a{
+    text-decoration: none;
+    color: white;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    padding: .5em;
+    
+  }
   .main .welcome .row .column h3 {
     text-align: left;  
     color: whitesmoke;  
