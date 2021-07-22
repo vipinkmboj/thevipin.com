@@ -17,7 +17,9 @@
                     <h2 style="text-align: center;">I am <strong><em><a href="/">Vipin Kumar,</a></em></strong></h2> 
                     <h2 style="text-align: right;">a Web Developer</h2>
                     <div class="anchor-block">
-                      <a href="#resumecontent">Resume</a><a href="#myworkcontent">My Work</a><a href="#contactcontent">Contact</a>
+                      <a id="resume-dropdown" href="#resumecontent" >Resume</a>
+                      <a href="#myworkcontent">My Work</a>
+                      <a href="#contactcontent">Contact</a>
                     </div>                    
                   </div>
                   <div class="column column-right">
@@ -31,43 +33,62 @@
       
        <!-- Resume Content Stats here-->
        
-       <div class="about" id="resumecontent">
+       <div class="resume" id="resumecontent">
             <h2>Resume</h2>
-            <p>
-              I am a Web Developer. I build websites and design Logos. 
-            </p>            
+            <div id="resume-button-div">
+              <a href="resume/vipinkumarresume2021.htm" target="_blank">Preview</a><a href="resume/vipinresume2021.docx"><i class="fa fa-download"></i> Download</a>
+            </div>                    
        </div>
       
           <!-- Resume Content ends here-->
 
           <!-- Services Content Stats here-->
-       <div class="services" id="myworkcontent">
+       <div class="my-work" id="myworkcontent">
             <h2>My Work</h2>
             
             <div class="row">
               <div class="column column-left">
-                <h3 style="text-align: center;">Our services include:</h3>
+                <h3 style="text-align: center;">Practice Projects</h3>
                 <ul>
-                  <li><b><i><a href="/getstarted" style="text-decoration: none;">Creating New Websites</a></i></b> for Small Businesses</li>
-                  <li>Small Business <b><i><a href="#" onclick="openContactModal()" style="text-decoration: none;">Websites Repairing</a></i></b></li>
-                  <li><b><i><a href="#" onclick="openContactModal()" style="text-decoration: none;">Editing</a></i></b> Small Business Websites</li>
+                  <li><a href="https://www.thevipin.com" style="text-decoration: none;" target="_blank">www.thevipin.com</a></li>
+
                 </ul>                
               </div>
               <div class="column column-right">
-                  <h3> Other Services:</h3>
+                  <h3>Web Sites</h3>
                   <ul>
-                    <li><a href="/getstarted" >Web-Development</a></li>
-                    <li><a href="#" onclick="openSignInModal()">Advertise Yourself on<br/>www.quickwebsite.net</a></li>                  
-                    </ul>
+                    <li><a href="https://www.niketpaultry.com" target="_blank">www.niketpaultry.com</a></li>
+                                      
+                  </ul>
               </div>
             </div>   
           </div>                        
           <!-- Services Content ends here-->            
               
-          <!-- Why us Content Stats here-->
-       <div class="whyus" id="contactcontent">
+          <!-- Contact Content Stats here-->
+       <div class="contact" id="contactcontent">
         <h2>Contact</h2>
-        contact     
+        <form action="/contactus" method="POST" role="form">
+                  <label for="firstname">First Name</label><br/>
+                  <input name="firstname" type="text" placeholder="Enter Your First Name..." required/><br/><br/>
+                  <label for="lastname">Last Name</label><br/>
+                  <input name="lastname" type="text" placeholder="Enter Your Last Name..." required/><br/><br/>
+                  <label for="mobilenumber">Mobile Number</label><br/>
+                  <input name="mobilenumber" type="tel" placeholder="Enter Your Mobile Number..." required/><br/><br/>
+                  <label for="email">Email</label><br/>
+                  <input name="email" type="email" placeholder="Enter Your Email id..." optional/><br/><br/>
+                  <label>Write Message</label><br/>
+                  <textarea name="writeusmessage" type="text" placeholder="Enter Your Message here...">
+  
+                  </textarea><br/><br/>
+                  <div class="contact-button">
+                    <button type="submit">Submit</button><button type="button" onclick="closeContactModal()">Cancel</button><br/><br/>
+                  </div>
+                  
+                  <div class="contact-anchor-tags">
+                    <span>Call Now: <a href="tel: +919813806752" style="color: whitesmoke;">0091 9813806752</a></span>
+                  </div>
+        </form>     
        </div>                        
       <!-- Why us Content ends here-->            
 

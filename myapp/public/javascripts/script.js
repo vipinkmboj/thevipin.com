@@ -888,4 +888,15 @@ function showPassword() {
             }
                 
             */
-                
+    // show resume dropdown on hover
+    /*
+
+    function showDropdown() {
+        document.getElementById('resume-dropdown-ul').style.display = 'block';
+    }
+
+    function hideDropdown() {
+        document.getElementById('resume-dropdown-ul').style.display = 'none';
+    }
+
+    */

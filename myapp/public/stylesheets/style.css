@@ -538,13 +538,24 @@
     display: flex;
     justify-content: space-around;
   }
-  .main .welcome .row .column-left .anchor-block a{
+  .main .welcome .row .column-left .anchor-block a {
     text-decoration: none;
     color: white;
     border: 2px solid whitesmoke;
     border-radius: 5px;
     padding: .5em;
     
+  }
+  #resume-dropdown-ul {
+    display: none;
+    position: relative;
+  }
+  #resume-dropdown-ul li {
+    list-style-type: none;
+    display: block;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
   }
   .main .welcome .row .column h3 {
     text-align: left;  
@@ -585,7 +596,7 @@
     font-size: 1.25em;
   }
   
-  .about {
+  .resume {
     width: 100%;
     height: auto;
     background-color: transparent;
@@ -594,17 +605,17 @@
     text-align: center;
     border-bottom: 1px solid whitesmoke;
   }
-  .about h2 {
+  .resume h2 {
     margin: auto;
     padding-top: 4.5em;
   }
-  .about p {
+  .resume p {
     text-align: left;
     font-size: 1.25em; 
     padding: 3em 3em 0 3em; 
   }
   /* Servicess css starts now*/
-  .services {
+  .my-work {
     width: 100%;
     height: auto;
     background-color: transparent;
@@ -620,83 +631,84 @@
     margin: auto;
   
   }
-  .services h2 {
+  .my-work h2 {
       
       padding-top: 4.5em;
    
   }
-  .services .row {
+  .my-work .row {
     display: flex;
     width: 100%;
     padding: .97em;  
     text-align: center;
     
   }
-  .services .row .column {
+  .my-work .row .column {
     width: 50%;
     padding: .97em;  
     text-align: center;  
     
   }
-  .services .row .column ul{
+  .my-work .row .column ul{
     float: left;  
     padding-left: 1.9em;
     text-align: left;
     font-size: 1.25em;
   }
-  .services .row .column ul li a {
+  .my-work .row .column ul li a {
     text-decoration: none;
+    color: whitesmoke;
   }
-  .services .row .column-right p {
+  .my-work .row .column-right p {
     float: left; 
     padding-left: 1.9em;
     text-align: left;
     font-size: 1.25em;
   }
-  .services .row .column-right p a {
+  .my-work .row .column-right p a {
     text-decoration: none;
     font-size: 1.25em;
   }
   @media screen and (min-width: 280px) and (max-width: 480px) {
-    .services .row {
+    .my-work .row {
       display: block;
       width: 100%;
       padding: .97em;  
       text-align: center;
       
     }
-    .services .row .column {
+    .my-work .row .column {
       width: 100%;
       margin: 0 auto 0 auto;
       padding: .97em;  
       text-align: center;  
       
     }
-    .services .row .column-right h3 {
+    .my-work .row .column-right h3 {
       padding-top: 4em;
     }
   }
   
-  /* Why us css starts */
-  .whyus {
+  /* contact css starts */
+  .contact {
     width: 100%;
     height: auto;
     background-color: transparent;
     color: whitesmoke; 
-    margin: auto auto 5em auto;
-    text-align: center;
+    margin: auto auto 5em auto;    
     border-bottom: 1px solid whitesmoke;
+    
   }
-  .whyus h2 {
-    margin: auto;
+  .contact h2 {
+    margin: auto;    
     padding-top: 4.5em;
   }
-  .whyus p {
+  .contact p {
     text-align: left;
     font-size: 1.25em; 
     padding: 3em 3em 0 3em; 
   }
-  /* Why Us css ends*/
+  /* Contact css ends*/
   /* specialoffers css* starts*/
   .specialoffers {
     margin-bottom: 5em;
@@ -1466,77 +1478,21 @@
   
   /* Contact Us modal css starts here */
   
-  .modal-parent-contact {
-    margin: 0 auto 0 auto;
-    padding: 0 10%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: transparent;
-    display: none;
-    text-align: left;
-    z-index: 1;  
-  }
-  
-  .modal-contact {
-  position: absolute;
-  top: 10%;
-  /*margin-left: 10%;
-  margin-right: 10%;*/
-  margin: auto;
-  padding: 2em;
-  height: auto;
-  overflow: auto;
-  border: 5px solid whitesmoke;
-  border-radius: 10px;
-  background-color: rgba(238, 135, 97, .6); 
-  color: whitesmoke; 
-  position: relative;
-  animation: 1s drop;
-  display: block;
-  z-index: 1;
-  }
-  
-  @keyframes drop {
-  0% {
-   top: -13em;
-  }
-  100% {
-   top: 10%;
-  }
-  }
-  
-  .X-contact {
-  position: absolute;
-  top: .5em;
-  right: .7em;
-  font-size: 2em;
-  
-  }
-  .X-contact:hover {
-  cursor: pointer;
-  color: rgb(180, 175, 175);
-  
-  
-  }
-  
-  .modal-parent-contact .modal-contact form label {
+  .contact form label {
    text-align: left;
    font-size: 1.25em;
   }
-  .modal-parent-contact .modal-contact form input {
+  .contact form input {
   width: 100%;
   border: 3px solid whitesmoke;
   border-radius: 10px;
   outline: none;
   padding: .8em;
-  background-color: rgba(238, 135, 97, .6); 
+  background-color: transparent; 
   color: whitesmoke;
   }
   
-  .modal-parent-contact .modal-contact form textarea {
+  .contact form textarea {
     max-width: 100%;
     border: 3px solid aliceblue;
     border-radius: 10px;
@@ -1547,46 +1503,46 @@
     overflow: auto;
     }
   
-  .modal-parent-contact .modal-contact form button {
+  .contact form button {
   width: 25%;
   border: 3px solid whitesmoke;
   border-radius: 10px;
   outline: none;
   padding: .8em;
-  background-color: rgba(238, 135, 97, .6); 
+  background-color: transparent; 
   color: whitesmoke;
   margin-right: 1.25em;
   } 
-  .modal-parent-contact .modal-contact form button:hover {
+  .contact form button:hover {
     color: rgb(180, 175, 175);
   }
-  .modal-anchor-tags {
+  .contact-anchor-tags {
     display: flex;
     justify-content: space-around;  
   }
-  .modal-anchor-tags a {
+  .contact-anchor-tags a {
     text-decoration: none;
     font-size: 1.25em;
   }
   
   
   @media screen and (min-width: 280px) and (max-width: 768px) {
-    .modal-parent-contact .modal-contact form button {
+    .contact form button {
       width: 100%;
       margin: auto auto 1em auto;
     }
   
-    .modal-anchor-tags {
+    .contact-anchor-tags {
       display: block;
       justify-content: none;  
     }
-    .modal-anchor-tags a {
+    .contact-anchor-tags a {
       display: block;
       text-decoration: none;
       font-size: 1.25em;
     }
   }
-  /* Contact Us modal css ends here */
+  /* Contact css ends here */
   
   /* Upload Profile Image modal css starts here */
   
@@ -1777,7 +1733,7 @@
   }
   
   @media screen and (min-width: 280px) and (max-width: 768px) {
-    .modal-parent-contact .modal-contact button {
+    .contact button {
       width: 100%;
       margin: auto auto 1em auto;
     }
@@ -1858,4 +1814,26 @@
 
 .settings table tr td {
   border: none;
+}
+
+#resume-button-div {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+#resume-button-div a {
+  text-decoration: none;
+  color: whitesmoke;
+  background-color: transparent;
+  border: 2px solid whitesmoke;
+  border-radius: 5px;
+  padding: .5em 1em .5em 1em;
+
+}
+
+
+.fa-linkedin {
+  background: transparent;
+  color: whitesmoke;
 }
