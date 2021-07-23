@@ -1,28 +1,32 @@
 * {
     box-sizing: border-box;
-    
-  }
-  
-  
-  body {
-    
+    margin: 0;
+    padding: 0;
+  }  
+  html {
+    height: 100%;
+}
+
+  body { 
+    min-height: 100%;
+    /*min-height: 100vh; */  
     margin: 0;
     padding: 0;
     text-align: center;
     background-color: rgb(21, 47, 94);
-
     background-image: url(../images/pexels-jeshootscom-442579.jpg);
     /*background-position: center center;*/
     background-repeat: repeat;
     background-size: contain;
-      /*background-attachment: fixed;*/ 
+    background-attachment: fixed;     
     color: whitesmoke;
     
   }
   @media only screen and (min-width: 280px) {
     body {
       
-      font-size: 1.5em;
+      font-size: 1.25em;
+      /*padding: 1%;*/
       /*max-width: 480px;*/
     }
   }
@@ -71,11 +75,11 @@
     position: fixed;
     top: 0;  
     width: 100%;
+    /*max-width: 100%;*/
    /* background-color: rgba(238, 135, 97, .4); */
    
-    /*border-bottom: 3px solid whitesmoke;*/
-    
-    z-index: 1;
+    /*border-bottom: 3px solid whitesmoke;*/    
+    /*z-index: 1;*/
   }
   /*
   .item2 { 
@@ -116,12 +120,12 @@
   
   
   /* header css starts */
-  .header {  
+  /*.header {  
      
     color: whitesmoke;
    
     /*background-color: rgba(238, 135, 97, .6);*/
-  }
+  /*}
   
   .header .headernav {
     display: flex; 
@@ -151,7 +155,7 @@
      
   }
   /* dropdown menu css */
-  .dropdown {
+  /*.dropdown {
     position: relative;  
     text-align: left;
   }
@@ -161,7 +165,7 @@
     padding: 0;
     width: max-content;
     /*background-color: rgba(238, 135, 97, .6);  */
-    border-radius: 5px;
+    /*border-radius: 5px;
     overflow: auto;
     display: none;
     
@@ -198,7 +202,7 @@
     right: 5px;
     color: blue;
     /*display: none;*/
-  }
+  /*}
   .cart-sidenav {    
     position: relative;
     padding-top: .6em;
@@ -217,6 +221,7 @@
     color: whitesmoke;
   }
   */
+  /*
   @media only screen and (min-width: 280px) and (max-width: 768px) { 
     .header .headernav ul {
       display: none;
@@ -240,7 +245,7 @@
   
   /* header css ends */
   /*iconbar css starts*/
-  .item1 .iconbar {
+  /*.item1 .iconbar {
     position: absolute;
     top: .9em;
     left: .9em;
@@ -251,12 +256,12 @@
   .item1 .iconbar:hover {
     cursor: pointer;
     /*color: rgb(180, 175, 175);*/
-    color: brown;
+    /*color: brown;
     z-index: 1;
-  }
+  /*}
   /*iconbar css ends*/
   /* brand-title css starts*/
-  .item1 .brand-title {
+  /*.item1 .brand-title {
     position: absolute;
     top: .2em;
     left: 3.5em;
@@ -292,7 +297,7 @@
   /* brand title css ends */
   
   /* sidenav css starts */
-  .item1 .sidenav-parent {
+  /*.item1 .sidenav-parent {
     margin: 0;
     padding: 0;
     position: absolute;
@@ -350,10 +355,11 @@
     background-color: aqua;
   }
   */
+  /*
   .item1 .sidenav-parent .sidenav ul li form .signoutBtn {
     margin: 0;
     /*padding-left: 0;*/
-    padding-left: 1.25em;
+    /*padding-left: 1.25em;
     text-align: left;
     
   }
@@ -372,6 +378,7 @@
   }
   
   /* dropdown css for sidenav */
+  /*
   .item1 .sidenav-parent .sidenav ul li ul {
     padding: 0;
     width: max-content;
@@ -419,7 +426,7 @@
     width: 100%;
     height: auto;
     font-size: 1.25em;
-    padding-bottom: .65em;
+    padding-bottom: .6em;
     background-color: transparent;
     border: none;
     outline: none;
@@ -466,7 +473,7 @@
     border: 2px solid whitesmoke;
     border-radius: 5px;
     padding: .4em;
-    margin-bottom: .6em;
+    margin-bottom: 1em;
   }
   .footer .row .column-3 a {
     padding: 5%;
@@ -578,31 +585,8 @@
     }
     .main .welcome .row .column {
       width: 100%;
+      padding-bottom: 1.5em;
     }
-  }
-  .how-it-works {
-    width: 100%;
-    height: auto;
-    margin: 2em 0 2em 0;
-    overflow: hidden;
-    border-bottom: 1px solid whitesmoke;
-  }
-  .how-it-works h2 {
-    margin: auto;
-    padding-top: 4.5em;
-  }
-  .how-it-works h4 {
-    padding: 4.2em 0 2em 0;
-  }
-  .how-it-works ol {
-    
-    color: whitesmoke;
-    text-align: left;
-    
-    margin: 3em;
-  }
-  .how-it-works ol li {
-    font-size: 1.25em;
   }
   
   .resume {
