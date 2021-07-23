@@ -409,13 +409,7 @@
   /* sidenav css ends */
   
   /* footer css starts*/
-  .footer {
-    
-  
-    /* 
-    width: 100%;
-    height: auto;
-    */
+  .footer {    
     background-color: transparent;  
     /*margin-top: 3.8em;*/
     margin-bottom: 0;  
@@ -430,7 +424,7 @@
     border: none;
     outline: none;
     color: whitesmoke;
-    margin-top: 5em;
+    margin-top: 1em;
     margin-bottom: 0;
   }
   .footer .row {
@@ -440,39 +434,54 @@
   }
   
   .footer .row .column {
-    width: 25%;  
+    width: 33%;  
     color: whitesmoke;
     font-size: 1.1em;
     text-align: center;
   }
-  .footer .row .column ul {
-    
+  .footer .row .column-1 address{
     text-align: left;
-    font-size: 1.1em;
-    padding-left: 30%;
+    padding-left: 3.5em;
+    padding-top: 1em;
   }
-  .footer .row .column ul li {
-    list-style: none;
-  }
-  .footer .row .column ul li a {
+  .footer .row .column a {
     text-decoration: none;
-    color: whitesmoke;
-    
+    color: whitesmoke;    
   }
-  .footer .row .column-4 a {
+  .footer .row .column-2 form {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    text-align: left;
+    padding-left: 3.5em;
+    padding-top: 1em;
+  }
+  .footer .row .column-2 label {
+    background-color: transparent;
+
+  }
+  .footer .row .column-2 form input {
+    width: 95%;
+    background-color: transparent;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    padding: .4em;
+    margin-bottom: .6em;
+  }
+  .footer .row .column-3 a {
     padding: 5%;
     text-decoration: none;
-    font-size: 1.1em;
+    font-size: 1.35em;
+    color: whitesmoke;
   }
   
   @media screen and (max-width: 768px) {
     .footer .row {
-      display: block;
-       
+      display: block;       
     }
+
     .footer .row .column {    
-      width: 100%; 
-      
+      width: 100%;       
     }
     
   }
@@ -702,6 +711,7 @@
   .contact h2 {
     margin: auto;    
     padding-top: 4.5em;
+    padding-bottom: 3em;
   }
   .contact p {
     text-align: left;
