@@ -568,6 +568,10 @@
     padding: .5em;
     
   }
+  .main .welcome .row .column-right img {
+    border-radius: 7px;
+    z-index: 1;
+  }
   .main .welcome .row-2 .column{
     display: flex;
     justify-content: space-between;
