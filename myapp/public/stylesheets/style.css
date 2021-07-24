@@ -3,9 +3,7 @@
     margin: 0;
     padding: 0;
   }  
-  html {
-    height: 100%;
-}
+  
 
   body { 
     min-height: 100%;
@@ -14,7 +12,7 @@
     padding: 0;
     text-align: center;
     background-color: rgb(21, 47, 94);
-    background-image: url(../images/pexels-jeshootscom-442579.jpg);
+    background-image: url(../images/pexels-ian-beckley-2463467.jpg);
     /*background-position: center center;*/
     background-repeat: repeat;
     background-size: contain;
@@ -545,7 +543,15 @@
   
   #hello {
     padding-top: 1em;
+    text-align: left;
   }
+  #vipinkumar {
+    text-align: center;
+  }
+  #webdeveloper {
+    text-align: right;
+  }
+  
   .main .welcome .row .column-left a {
     text-decoration: none;
     color: whitesmoke;
@@ -561,6 +567,10 @@
     border-radius: 5px;
     padding: .5em;
     
+  }
+  .main .welcome .row-2 .column{
+    display: flex;
+    justify-content: space-between;
   }
   #resume-dropdown-ul {
     display: none;
@@ -579,6 +589,26 @@
     
   }
 
+  @media screen and (min-width: 280px) and (max-width: 468px) {
+    #hello {
+      padding-top: 1em;
+      text-align: left;
+    }
+    #vipinkumar {
+      text-align: center;
+    }
+    #webdeveloper {
+      text-align: center;
+    }
+    .main .welcome .row-2 .column{
+      display: flex;
+      flex-direction: column;
+      
+    }
+    .main .welcome .row-2 .column a {
+      padding-top: 1.5em;
+    }
+  }
   @media screen and (min-width: 280px) and (max-width: 768px){
     .main .welcome .row {
       display: block;
@@ -586,7 +616,8 @@
     .main .welcome .row .column {
       width: 100%;
       padding-bottom: 1.5em;
-    }
+    }    
+    
   }
   
   .resume {
