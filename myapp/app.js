@@ -9,6 +9,8 @@ var session = require('express-session')
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var basicfrontendpagewithsearchbarRouter = require('./routes/basicfrontendpagewithsearchbar');
+var basiccalculatorRouter = require('./routes/basiccalculator');
+var responsivenavbarRouter = require('./routes/responsivenavbar');
 
 
 
@@ -36,6 +38,8 @@ app.use(session({
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/basicfrontendpagewithsearchbar', basicfrontendpagewithsearchbarRouter);
+app.use('/basiccalculator', basiccalculatorRouter);
+app.use('/responsivenavbar', responsivenavbarRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
