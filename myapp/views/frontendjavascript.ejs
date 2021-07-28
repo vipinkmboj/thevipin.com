@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Front End Practice</title>        
+        <link rel="stylesheet" href="stylesheets/frontendjavascript.css"/>
+    </head>
+    <body>
+        <h1>Javascript Practice Session</h1>
+        <h3>Display Date</h3><br/>
+       <button onclick="showDateandTime()">Date and Time</button>
+       <p id="show-date"></p>
+    
+       <h3>Display some text by id</h3>
+       <p id="sometext"></p>
+
+       <button onclick="showtwitter()">Show Twitter</button><br/><br/>
+       <img id="myImage" src="frontendjavascriptimages/fb.png" alt="social-logo"/><br/><br/>
+       <button onclick="showfacebook()">Show Facebook</button>
+
+       <br/><br/>
+       <h3>Display and Hide Image on button click</h3>
+       <button onclick="showscreenshot()">Display Image</button><br/><br/>
+       <img id="screenshot" src="frontendjavascriptimages/Screenshot (1).png" width="100px" height="100px" style="display: none;"/><br/><br/>
+       <button onclick="hidescreenshot()">Hide Image</button>
+        
+       <br/><br/>
+       <h3>Change font size using javascript</h3>
+       <button onclick="changefontsize()">Change font Size</button>
+       <p class="lorem-class">
+        What is Lorem Ipsum?
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        
+        Why do we use it?
+        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                
+       </p>
+
+       <br/>
+       <h3>Calculator</h3>
+
+       <div class="calculator-grid">
+        <div class="output">
+            <div data-previous-operand class="previous-operand"></div>
+            <div data-current-operand class="current-operand"></div>
+        </div>        
+        <button data-all-clear class="span-2">Ac</button>
+        <button data-delete>Del</button>
+        <button data-operator>/</button>
+        <button data-number>1</button>
+        <button data-number>2</button>
+        <button data-number>3</button>
+        <button data-operator>*</button>
+        <button data-number>4</button>
+        <button data-number>5</button>
+        <button data-number>6</button>
+        <button data-operator>+</button>
+        <button data-number>7</button>
+        <button data-number>8</button>
+        <button data-number>9</button>
+        <button data-operator>-</button>
+        <button data-number>.</button>
+        <button data-number>0</button>
+        <button data-output class="span-2">=</button>
+       </div>
+
+       <br/><br/>
+      
+
+        <script src="javascripts/frontendjavascript.js"></script>
+    </body>
+</html>
