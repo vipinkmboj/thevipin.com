@@ -13,6 +13,7 @@ var basiccalculatorRouter = require('./routes/basiccalculator');
 var responsivenavbarRouter = require('./routes/responsivenavbar');
 var frontendjavascriptRouter = require('./routes/frontendjavascript');
 var modalpracticeRouter = require('./routes/modalpractice');
+var confirmbeforedeletingmodalRouter = require('./routes/confirmbeforedeletingmodal');
 
 
 
@@ -44,6 +45,7 @@ app.use('/basiccalculator', basiccalculatorRouter);
 app.use('/responsivenavbar', responsivenavbarRouter);
 app.use('/frontendjavascript', frontendjavascriptRouter);
 app.use('/modalpractice', modalpracticeRouter);
+app.use('/confirmbeforedeletingmodal', confirmbeforedeletingmodalRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

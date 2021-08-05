@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Confirm Before Deleting</title>
+    <link rel='stylesheet' href='/stylesheets/confirmbeforedeletingmodal.css' />
+  </head>
+  <body>
+    <div class="container deleteModal">
+    <h1>Confirm Before Deleting</h1>
+    
+    <br/><br/>
+       <button class="delete" onclick="showModal()">Delete</button>
+      <div id="id01" class="modal">
+        <span class="close" title="Close Modal" onclick="closeModal()">
+          &times;
+        </span>
+        <form class="modal-content" action="" >
+          <div class="container ">
+            <h1>Delete Account</h1><br/>
+            <p>Are You sure you want to delete your account?</p>           
+            <div class="clearfix">
+              <button class="cancelbtn" onclick="closeModal()">Cancel</button>
+              <button class="deletebtn" onclick="closeModal()">Delete</button>
+            </div>
+          </div> 
+        </form>  
+      </div>      
+    </div> 
+    
+    <script src="javascripts/confirmbeforedeletingmodal.js"></script>
+  </body>
+</html>
