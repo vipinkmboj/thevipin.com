@@ -12,6 +12,7 @@ var basicfrontendpagewithsearchbarRouter = require('./routes/basicfrontendpagewi
 var basiccalculatorRouter = require('./routes/basiccalculator');
 var responsivenavbarRouter = require('./routes/responsivenavbar');
 var frontendjavascriptRouter = require('./routes/frontendjavascript');
+var modalpracticeRouter = require('./routes/modalpractice');
 
 
 
@@ -42,6 +43,7 @@ app.use('/basicfrontendpagewithsearchbar', basicfrontendpagewithsearchbarRouter)
 app.use('/basiccalculator', basiccalculatorRouter);
 app.use('/responsivenavbar', responsivenavbarRouter);
 app.use('/frontendjavascript', frontendjavascriptRouter);
+app.use('/modalpractice', modalpracticeRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
