@@ -2,8 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }  
-  
+  }    
 
   body { 
     min-height: 100%;
@@ -11,15 +10,15 @@
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: rgb(21, 47, 94);
+    background-color: rgba(0,0,0,0.5);
     background-image: url(../images/pexels-ian-beckley-2463467.jpg);
     /*background-position: center center;*/
     background-repeat: repeat;
     background-size: contain;
     background-attachment: fixed;     
-    color: whitesmoke;
-    
+    color: whitesmoke;    
   }
+  
   @media only screen and (min-width: 280px) {
     body {
       
@@ -661,7 +660,7 @@
   }
   .my-work h2 {
       
-      padding-top: 4.5em;
+      padding-top: 2em;
    
   }
   .my-work .row {
@@ -713,7 +712,7 @@
       
     }
     .my-work .row .column-right h3 {
-      padding-top: 4em;
+      padding-top: 3em;
     }
   }
   
@@ -729,14 +728,20 @@
   }
   .contact h2 {
     margin: auto;    
-    padding-top: 4.5em;
-    padding-bottom: 3em;
+    padding-top: 2em;
+    padding-bottom: 2em;
   }
+  .contact form {
+    text-align: left;
+  }
+  /*
   .contact p {
     text-align: left;
     font-size: 1.25em; 
     padding: 3em 3em 0 3em; 
   }
+  */
+
   /* Contact css ends*/
   /* specialoffers css* starts*/
   .specialoffers {
@@ -798,7 +803,7 @@
     padding-bottom: 5em;
   }
   .dashboardcart .cart-items, .dashboardpurchased .purchased-items {
-    padding-top: 3.8em;
+    padding-top: 2em;
   }
   .dashboardcart table {
     width: 100%;
@@ -1844,12 +1849,14 @@
 .settings table tr td {
   border: none;
 }
-
+.resume h2 {
+  padding-top: 2em;  
+}
 #resume-button-div {
   display: flex;
   justify-content: space-around;
-  padding-top: 4em;
-  padding-bottom: 4em;
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
 #resume-button-div a {
   text-decoration: none;
