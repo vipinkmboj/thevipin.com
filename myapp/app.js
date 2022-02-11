@@ -4,7 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 //import session Vipin...
-var session = require('express-session')
+//var session = require('express-session')
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -31,12 +31,14 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // require dot env
+/*
 require('dotenv').config();
 app.use(session({
   secret: process.env.EXPRESS_SESSION_SECRET_KEY,
   resave: false,
   saveUninitialized: true
 }));
+*/
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
