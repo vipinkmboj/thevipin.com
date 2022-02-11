@@ -58,6 +58,8 @@
     }
   }
   
+  /* from here*/
+
   .item {
     /*border-bottom: 2px solid whitesmoke;
     border-collapse: collapse;*/
@@ -622,25 +624,7 @@
     }    
     
   }
-  
-  .resume {
-    width: 100%;
-    height: auto;
-    background-color: transparent;
-    color: whitesmoke; 
-    margin: auto auto 0 auto;
-    text-align: center;
-    border-bottom: 1px solid whitesmoke;
-  }
-  .resume h2 {
-    margin: auto;
-    padding-top: 4.5em;
-  }
-  .resume p {
-    text-align: left;
-    font-size: 1.25em; 
-    padding: 3em 3em 0 3em; 
-  }
+  re
   /* Servicess css starts now*/
   .my-work {
     width: 100%;
