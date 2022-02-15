@@ -7,6 +7,11 @@ var conn = mongoose.Collection;
 
 var subscribeSchema = new mongoose.Schema({
 
+    MobileNumber: {
+        type: String,
+        required: true
+        
+    },
 SubscriptionEmail: {
     type: String,
     required: true

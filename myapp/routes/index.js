@@ -97,6 +97,7 @@ ses.sendEmail(params, (err) => {
 
 router.post('/subscribe', function(req, res, next) {
   var subscriptionDetail = new subscribeModel({
+    MobileNumber: req.body.mobilenumber,
     SubscriptionEmail: req.body.email
   });
   subscriptionDetail.save((err) => {
@@ -148,12 +149,11 @@ let params = {
 // this sends the email
 ses.sendEmail(params, (err) => {
   if(err) {
-    res.render('index', { title: 'Vipin Kumar Portfolio', msg:'Subscribed Successfully!!'});
+    res.render('index', { title: 'Vipin Kumar Portfolio', msg:'Subscribed Successfully, I ll contact you soon!'});
   } else {
-    res.render('index', { title: 'Vipin Kumar Portfolio', msg:'Subscribed Successfully!'});
+    res.render('index', { title: 'Vipin Kumar Portfolio', msg:'Subscribed Successfully, I ll contact you soon!'});
   }
 });
-
 
     //
     //res.render('index', { title: 'Vipin Kumar Portfolio', msg:'Subscribed Successfully!'});
