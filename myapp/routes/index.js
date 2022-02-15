@@ -110,7 +110,8 @@ router.post('/subscribe', function(req, res, next) {
     var output = `
     <h3>Hi, You have got a new subscriber at thevipin.com</h3>
     <strong>Subscription Detail: </strong><br/>
-    <p>    
+    <p>  
+    Mobile: ${req.body.mobilenumber},<br/>  
     Email: ${req.body.email}    
     <p>
 `;
