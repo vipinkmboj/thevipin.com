@@ -45,7 +45,7 @@
   @media only screen and (min-width: 1024px) {
     body {
      
-      font-size: 1.5em;
+      font-size: 2.5em;
       
     }
   }
@@ -53,7 +53,7 @@
   @media only screen and (min-width: 1200px) {
     body {
       
-      font-size: 1.2em;
+      font-size: 2.7em;
       
     }
   }
@@ -566,7 +566,8 @@
     color: white;
     border: 2px solid whitesmoke;
     border-radius: 5px;
-    padding: .5em;
+    padding: .3em;
+    
     
   }
   .main .welcome .row .column-right img {
@@ -625,40 +626,101 @@
     
   }
   
+  /* My Skills css starts here*/
+
+  .my-skills {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+
+  }
+  .my-skills h2 {
+    text-align: center;
+    padding-top: 2em;
+  }
+  .my-skills .row {
+    width: 100%;
+     height: auto;
+     margin: 0;
+     padding: 0;
+     display: flex;
+  }
+  .my-skills .row .column {
+    width: 50%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+
+  }
+  /*
+  .my-skills .row .col-1 {
+    background-color: aqua;
+  }
+  .my-skills .row .col-2 {
+    background-color: rgb(141, 129, 156);
+  }
+  */
+  .my-skills .row .column h3 {
+    text-align: center;
+  }
+  .my-skills .row .column ul {
+    width: 100%;
+    height: auto;
+    text-align: left;
+    padding-left: 1.5em;
+  }
+  @media screen and (min-width: 280px) and (max-width: 480px) {
+    .my-skills .row {
+      display: block;
+    }
+    .my-skills .row .column {
+      width: 100%;
+      height: auto;
+    }
+    .my-skills .row .column ul {
+      padding-left: 2em;
+    }
+  }
+  /* My Skills css ends here*/
   /* Servicess css starts now*/
+  
+  /*
   .my-work {
     width: 100%;
     height: auto;
     background-color: transparent;
     color: whitesmoke; 
-    /* 
-    padding: 3.2em .8em 0 .8em;
-    float: center;
-    */
-    text-align: center;
+    
     border: 1px solid whitesmoke;
     border-left: none;
     border-right: none;
-    margin: auto;
+   
   
   }
   .my-work h2 {
-      
+      text-align: center;
       padding-top: 2em;
    
   }
   .my-work .row {
     display: flex;
     width: 100%;
+    height: auto;
     padding: .97em;  
     text-align: center;
     
   }
   .my-work .row .column {
     width: 50%;
+    height: auto;
     padding: .97em;  
-    text-align: center;  
+     
     
+  }
+  .my-work .row .column h3 {
+    
+    text-align: center;
   }
   .my-work .row .column ul{
     float: left;  
@@ -687,26 +749,32 @@
     text-align: center;
     font-size: large;
   }
-  @media screen and (min-width: 280px) and (max-width: 480px) {
+  @media screen and (min-width: 280px) and (max-width: 768px) {
     .my-work .row {
       display: block;
       width: 100%;
+      height: auto;
       padding: .97em;  
       text-align: center;
       
     }
     .my-work .row .column {
       width: 100%;
+      height: auto;
       margin: 0 auto 0 auto;
       padding: .97em;  
       text-align: center;  
       
     }
     .my-work .row .column-right h3 {
+      width: 100%;
+      height: auto;
+      margin: auto;
       padding-top: 3em;
+      text-align: center;
     }
   }
-  
+  */
   /* */
   
 
