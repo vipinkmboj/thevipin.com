@@ -797,6 +797,9 @@
   .contact form {
     text-align: left;
   }
+  .contact form textarea {
+    max-width: 80%;
+  }
   /*
   .contact p {
     text-align: left;
@@ -1132,7 +1135,7 @@
     background-color: transparent;
     border: 2px solid whitesmoke;
     border-radius: 5px;
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     color: whitesmoke;
     outline: none;
